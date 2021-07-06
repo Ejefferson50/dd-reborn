@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/DDLogo.png';
+import logo from '../../assets/Group-1.png';
 import './UserHome.css';
 
 export default class UserHome extends Component{
@@ -33,6 +33,11 @@ export default class UserHome extends Component{
                     <h5><Link to='/user/mydonations' className="user-link">My Donations</Link></h5>
                             </div>
                     <hr/> 
+
+                    <div className = "MySocial">
+                    <h5><Link to="user/Posts" className="user-link">Media</Link></h5>
+                    </div>
+                    <hr/>
                              <div className = "MyPay">
                     <h5><Link to="user/payments" className="user-link">Payment</Link></h5>
                     </div>
@@ -44,9 +49,6 @@ export default class UserHome extends Component{
                       
                     <br/>
                     <br/>
-                    <br/> 
-                    <br/>
-                    <br/> 
                     <Link to="/user/create" id="user-home-link"><button>Create A Donation</button></Link>
                     </div>
                     </center>
